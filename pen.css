@@ -1,0 +1,35 @@
+.pen{
+    --rotate-figure: 0deg;
+    perspective: 20000px;
+    position: relative;
+    transform: rotateY(var(--rotate-figure)) rotateX(30deg);
+    transform-style: preserve-3d;
+    --unit: 1.667vmin;
+    --square-side: calc(var(--unit) * 20);
+    --side-unitless: 0.61803398875;
+    --side: calc(var(--square-side) * var(--side-unitless));
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    --rotateZ: 0deg;
+    --fold: 0deg;
+    --base-distance: calc(var(--square-side) * 1.377162575778731);
+    width: var(--square-side);
+    height: var(--square-side);
+    
+    --p-y2: 41.2214747707%;
+    --p-x3: calc(100% - 19.098300562%);
+    --p-x4: 19.098300562%;
+    --offset: .19098300562;
+    --shy-of-the-square: 4.89434837043;
+    --shy-percent: 4.89434837043%;
+  }
+
+  .pen .base {
+    --fold: 0deg;
+  }
+
+  .pen section {
+    border: 0px solid white;
+    width: var(--square-side);
+    height: var(--square-side);
+  }

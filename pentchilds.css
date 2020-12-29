@@ -1,0 +1,36 @@
+.pen div:nth-child(1) {
+    --hue: 343;
+    --rz: -108deg;
+    --origin-x: var(--p-x4);
+  }
+  .pen div:nth-child(2) {
+    --hue: 223;
+    --rz: -36deg;
+    --origin-x: var(--p-x4);
+    --tx: calc(var(--p-x4) * -1);
+    --ty: calc(var(--p-y2) - 100%);
+  }
+  .pen div:nth-child(3) {
+    --hue: 253;
+    --rz: 36deg;
+    --origin-x: var(--p-x3);
+    --tx: var(--p-x4);
+    --ty: calc(var(--p-y2) - 100%);
+  }
+  .pen div:nth-child(4) {
+    --hue: 283;
+    --rz: 108deg;
+    --origin-x: var(--p-x3);
+  }
+  .pen div:nth-child(5) {
+    --hue: 313;
+    --rz: 180deg;
+  }
+  
+  
+  .pen section:nth-of-type(2) {
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% calc(var(--base-distance) * 0);
+    transform: translateY(calc(var(--square-side) * -1)) translateY(1%) translateX(calc(var(--shy-percent) * -.91)) translateZ(calc(var(--base-distance) * 1)) rotateY(180deg) rotateZ(36deg) translate3d(0, 0, 0);
+    --saturation: 80%;
+  }

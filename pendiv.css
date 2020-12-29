@@ -1,0 +1,19 @@
+ .pen div {
+    width: var(--square-side);
+    height: var(--square-side);
+    --color: hsl(var(--hue, 193), var(--saturation, 60%), var(--lightness, 60%));
+    background: var(--color);
+    color: var(--color);
+    --path: polygon(50% var(--shy-percent), 100% var(--p-y2), var(--p-x3) 100%, var(--p-x4) 100%, 0% var(--p-y2));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    transition: transform 2000ms ease-out;
+    transform-style: preserve-3d;
+    transform-origin: var(--origin-x, 50%) var(--origin-y, 100%);
+    transform: translate(var(--tx, 0px), var(--ty, 0px)) rotateZ(var(--rz, 0deg)) rotateY(var(--ry, 0deg)) rotateX(var(--fold, 0deg));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

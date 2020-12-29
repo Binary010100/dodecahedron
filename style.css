@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    background: linear-gradient(-135deg, hsl(213, 80%, 20%), hsl(213, 80%, 30%));
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+@supports (clip-path: polygon(50% 0%, 100% 0%, 0% 100%)) or (-webkit-clip-path: polygon(50% 0%, 100% 0%, 0% 100%)) {
+    .pen div {
+      -webkit-clip-path: var(--path);
+      clip-path: var(--path);
+    }
+  }
